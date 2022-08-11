@@ -1,1 +1,1 @@
-# -a-Rectangle-of-s-maker-
+# Rectangle maker 
