@@ -1,0 +1,55 @@
+#include <cs50.h>
+ #include <stdio.h>
+ void PrintWidth(int m, int y);
+ void PrintHeight1(int m, int y);
+ void Printspace(int z, int m);
+ int main(void)
+{
+    int y = get_int("type the width");
+    int m = get_int("type the height");
+
+    printf(" ");
+    for (int d = 0; d < 2*y ; d++)
+    {
+    PrintWidth(m,y);
+    }
+    printf("\n");
+    for (int z = 0 ; z < m; z++)
+{
+    PrintHeight1(z,m);
+    for (int n = 0; n < 2*y ; n++)
+    {
+    Printspace(z,m);
+    }
+    PrintHeight1(z,m);
+    printf("\n");
+    
+}
+    printf(" ");
+for (int n = 0; n < y ; n++)
+{
+    PrintWidth(n,y);
+}
+printf("\n");
+    
+
+    
+
+}
+
+void PrintWidth(int n, int y)
+{
+    {
+        printf("_");
+    }
+}
+void Printspace(int z , int m)
+{
+        printf(" ");
+}
+void PrintHeight1(int m, int z)
+{
+    {
+    printf("|");
+    }
+}
